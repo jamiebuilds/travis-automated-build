@@ -8,5 +8,8 @@ node_js:
   - "0.10"
 script: npm run build
 after_success:
+  - git config user.name ${GIT_NAME}
+  - git config user.email ${GIT_EMAIL}
+  - git add -A
   - git commit -m '[Travis Deploy]'
-  - git push origin master
+  - git push https://github.com/thejameskyle/travis-automated-build.git master
