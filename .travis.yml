@@ -1,0 +1,12 @@
+env:
+  secure: mHGeUhA5Ov05EyV5fQZ8fgdd0zXEJ/gfGsuVAgfIUTeUVkK3lGD6Nkj55pt4wDoCD4EGmFiUOOMTBktZadBzQr6mif/5fvr/IPXB2kBxgY0j8nwX8Dq6d99l6jxZJBj8TWCy8/2H3wrzX2Ix4gkTEWt/u9/Rv05vPiKw6mTJ9Pk=
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - "0.10"
+script: npm run build
+after_success:
+  - git commit -m '[Travis Deploy]'
+  - git push origin master

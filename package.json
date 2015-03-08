@@ -1,0 +1,23 @@
+{
+  "name": "travis-automated-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel test-file.js -L -o test-file-output.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thejameskyle/travis-automated-build.git"
+  },
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejameskyle/travis-automated-build/issues"
+  },
+  "homepage": "https://github.com/thejameskyle/travis-automated-build",
+  "devDependencies": {
+    "babel": "^4.7.3"
+  }
+}
